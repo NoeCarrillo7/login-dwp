@@ -1,0 +1,102 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+
+}
+
+.form-container{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    height: 500px;
+    background-color: white;
+}
+
+.register-container{
+    width: 35%;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+
+.form-container h1{
+    padding: 30px;
+    font-size: 2em;
+    font-weight: lighter;
+}
+.form-container span{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+
+.form-email, .form-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email, .input-password{
+    width: 85%;
+    height: 40px;
+    border: none; /* Elimina todos los bordes */
+    border-radius: 20px; /* Asegura que no haya esquinas redondeadas */
+    outline: none; /* Opcional: evita el borde azul al hacer clic en el input */
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 0.7em;
+    background-color: #f0f0f0;
+
+}
+
+.input-email-err, .input-password-err{
+    width: 85%;
+    border: none;
+    border-bottom: 1px solid #ff0000;
+    outline: none;
+    margin-left: 30px
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-login{
+    width: 85%;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-registerWG{
+    width: 40%;
+    height: 40px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.create-account{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}

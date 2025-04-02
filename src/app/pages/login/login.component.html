@@ -1,0 +1,43 @@
+<div class="login-container">
+
+    <div class="form-container">
+        <h1>Iniciar sesión</h1>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-email">
+                <span>Correo electronico</span>
+                @if (form.get('email')?.touched && form.get('email')?.errors) {
+                    <input type="email" class="input-email-err" formControlName="email" >
+                }
+                @else {
+                    <input type="email" class="input-email" formControlName="email" placeholder="Correo electronico">
+                }
+            </div>
+            <div class="form-password">
+                <span>Contraseña</span>
+                @if (form.get('password')?.touched && form.get('password')?.errors || this.error) {
+                    <input type="password" class="input-password-err" formControlName="password" >
+                }
+                @else {
+                    <input type="password" class="input-password" formControlName="password" placeholder="Contraseña">
+                }
+            </div>
+            <p></p>
+            <div class="buttons">
+                <button type="submit" class="btn-login">Iniciar sesión</button>
+                <p>__________________or__________________</p>
+                <button type="button" class="btn-registerWG" (click)="onGoogleSignIn()">Iniciar sesión con Google</button>
+            </div>
+            
+        </form>
+    </div>
+    <div class="register-container">
+        <p>Bienvenido a Universidad Tecnologica del Río</p>
+        <div class="create-account">
+            <label>¿No tienes cuenta? </label>
+            <a href="/register" class="create-account-link">Crear cuenta</a>
+        </div>
+    </div>
+</div>
+
+
+
