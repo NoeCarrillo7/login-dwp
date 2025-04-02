@@ -1,0 +1,143 @@
+.registro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(80, 80, 80);
+}
+
+.form-container{
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    height: 500px;
+    background-color: white;
+}
+
+.register-container{
+    width: 35%;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e8ba03;
+}
+
+
+.form-container h1{
+    padding: 30px;
+    font-size: 2em;
+    font-weight: lighter;
+}
+.form-container span{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+
+.form-email, .form-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email, .input-password{
+    width: 85%;
+    height: 40px;
+    border: none; /* Elimina todos los bordes */
+    border-radius: 20px; /* Asegura que no haya esquinas redondeadas */
+    outline: none; /* Opcional: evita el borde azul al hacer clic en el input */
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 0.7em;
+    background-color: #f0f0f0;
+
+}
+
+.input-email-err, .input-password-err{
+    width: 85%;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border-color: red;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 0.7em;
+    background-color: #f0f0f0;
+}
+
+.input-email-err::placeholder, .input-password-err::placeholder{
+    color: red;
+}
+
+
+
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.btn-login{
+    width: 85%;
+    height: 40px;
+    background-color: #d8ad00;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.btn-login:hover{
+    background-color: #c39c01;
+}
+
+.btn-nvg {
+    width: 120px;  /* Ajusta el tamaño del botón */
+    height: 40px;
+    font-size: 0.7em;
+    color: white;
+    background: transparent;  /* Fondo transparente */
+    border: 2px solid white;  /* Borde blanco */
+    border-radius: 25px;  /* Más redondeado */
+    cursor: pointer;
+    margin-left: 38%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.btn-nvg:hover {
+    background: rgba(255, 255, 255, 0.2); /* Suave cambio de color al pasar el mouse */
+}
+
+.create-account{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.1em;
+}
+.create-account label{
+    margin-bottom: 20px;
+}
+
+.register-container p{
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}

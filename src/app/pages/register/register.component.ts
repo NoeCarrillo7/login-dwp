@@ -33,5 +33,8 @@ export class RegisterComponent {
     });
   }
 
+  navigateToLogin() {
+    this.router.navigateByUrl('/login');
+  }
   
 }
