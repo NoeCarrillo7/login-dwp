@@ -46,9 +46,9 @@
 .input-email, .input-password{
     width: 85%;
     height: 40px;
-    border: none; /* Elimina todos los bordes */
-    border-radius: 20px; /* Asegura que no haya esquinas redondeadas */
-    outline: none; /* Opcional: evita el borde azul al hacer clic en el input */
+    border: none; 
+    border-radius: 20px; 
+    outline: none;
     margin-left: 30px;
     margin-top: 10px;
     padding-left: 15px;
@@ -100,22 +100,21 @@
 }
 
 .btn-nvg {
-    width: 120px;  /* Ajusta el tamaño del botón */
+    width: 120px;
     height: 40px;
     font-size: 0.7em;
     color: white;
-    background: transparent;  /* Fondo transparente */
-    border: 2px solid white;  /* Borde blanco */
-    border-radius: 25px;  /* Más redondeado */
+    background: transparent; 
+    border: 2px solid white;
+    border-radius: 25px;
     cursor: pointer;
     margin-left: 38%;
     text-align: center;
     transition: 0.3s ease-in-out;
 }
 
-/* Efecto al pasar el mouse */
 .btn-nvg:hover {
-    background: rgba(255, 255, 255, 0.2); /* Suave cambio de color al pasar el mouse */
+    background: rgba(255, 255, 255, 0.2); 
 }
 
 .create-account{
@@ -136,7 +135,6 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 20px;
     color: white;
     font-size: 2em;
     font-weight: bold;
