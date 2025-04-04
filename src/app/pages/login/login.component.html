@@ -1,11 +1,11 @@
-<div class="login-container">   
+<div class="login-container">
     <div class="form-container">
         <h1>Iniciar sesión</h1>
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="form-email">
                 <span>Correo electronico</span>
                 @if (form.get('email')?.touched && form.get('email')?.errors) {
-                    <input type="email" class="input-email-err" formControlName="email" >
+                    <input type="email" class="input-email-err" formControlName="email" placeholder="Error de validacion">
                 }
                 @else {
                     <input type="email" class="input-email" formControlName="email" placeholder="Correo electronico">
@@ -14,29 +14,32 @@
             <div class="form-password">
                 <span>Contraseña</span>
                 @if (form.get('password')?.touched && form.get('password')?.errors || this.error) {
-                    <input type="password" class="input-password-err" formControlName="password" >
+                    <input type="password" class="input-password-err" formControlName="password" placeholder="La contraseña debe tener almenos 6 digitos" >
                 }
                 @else {
                     <input type="password" class="input-password" formControlName="password" placeholder="Contraseña">
                 }
             </div>
             <p></p>
+            <button type="submit" class="btn-login">Iniciar sesión</button>
             <div class="buttons">
-                <button type="submit" class="btn-login">Iniciar sesión</button>
-                <p>__________________or__________________</p>
-                <button type="button" class="btn-registerWG" (click)="onGoogleSignIn()">Iniciar sesión con Google</button>
+                <p>__________________o__________________</p>
+                <button type="button" class="btn-registerWG" (click)="onGoogleSignIn()">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxS5iRASsr50ASJqYsyAvcew2ICajtSGVkJw&s" alt="google btn">
+                    Inicia sesión con Google
+                </button>
             </div>
             
         </form>
     </div>
     <div class="register-container">
-        <p>Bienvenido a Universidad Tecnologica del Río</p>
+        <p>🎓 ¡Bienvenidos, Estudiantes! 📚</p>
+        <h1>A la Universidad Tecnológica del Río</h1>
         <div class="create-account">
-            <label>¿No tienes cuenta? </label>
-            <a href="/register" class="create-account-link">Crear cuenta</a>
+            <label>¿No tienes una cuenta? </label>
+            <button class="btn-nvg" (click)="navigateToRegister()">Registrate</button>
         </div>
     </div>
 </div>
-
 
 
